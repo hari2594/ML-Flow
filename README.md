@@ -49,6 +49,8 @@ No cross-validation metrics summary for this model
 CV is not performed in the Model - NULL is passed
   .........
 ```
+
+```
 Sample meta data:
 {`Model_UUID`: `17b68386-d49a-11e9-8bff-3c2c30d1ea45`,
  `Model_Tag`: `None`,
@@ -85,7 +87,7 @@ Sample meta data:
  `Created_By`: `Haribaskar.d`,
  `Modified_Date`: datetime.datetime(2019, 9, 11, 13, 43, 10, 188889),
  `Modified_By`: None}
- 
+ ```
 ---
 ## Contributing
 
