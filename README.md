@@ -22,6 +22,8 @@ Preperation of model meta data:
 
 The use case I have solved in this module is to get the model meta data. 
 
+![Alt text](https://github.com/hari2594/ML-Flow/blob/master/Template.PNG?raw=true "Flow of the MLFlow Sample template")
+
 **The modules handled in this pacakges are:**
 1. Does the model training and the predicition, based on the inputs passed. ( The inputs passed can be either a pandas or H2o framework
    correspondingly the respective flags should be set.
