@@ -23,7 +23,7 @@ Preperation of model meta data:
 The use case I have solved in this module is to get the model meta data. 
 
 <p align="center">
-    <img src="https://github.com/hari2594/ML-Flow/blob/master/Template.PNG" width="200" />
+    <img src="https://github.com/hari2594/ML-Flow/blob/master/Template.PNG" width="250" />
 </p>
 
 **The modules handled in this pacakges are:**
