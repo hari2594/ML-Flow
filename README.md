@@ -3,26 +3,26 @@
 MLFlow is the generalized package which is developed using the python and the H2o framework. The purpose of this function is to store the models meta data ie., for both classification and regression model. 
 
 ---
-##Preperation of model meta data:
+Preperation of model meta data:
 ---
-1. data = pandas dataframe or H2o dataframe based on which the below flags are set,
+1. `data` = pandas dataframe or H2o dataframe based on which the below flags are set,
     h2oframe, pdframe
-2. split = If the data is passed then based on this split - it divides the data in train and valid
+2. `split` = If the data is passed then based on this split - it divides the data in train and valid
         If train & valid is passed direclty then this can be ignored
-3. model_uuid = unique id for user reference (If this is none an Unique ID will be generated automatically)
-4. model_type = classification/ regression
-5. model version = (by default Version1 is passed)
-6. model = actual model data (as of now H2o model)
-7. features = list of features (X)
-8. target = target variable
-9. hyperparams_tuning = if the model is tuned based on grid search. Then list of tuned parameters needs to be passed
-10. maximising metrics = for train/valid metrics - it generated the metrics details for different sets of threshold, So based on this 11. maximising metrics the threshold and corresponding metrics are stores.
-12. plots_show = To display all the metrics graphs for the passed model.  For both train and validation data.
+3. `model_uuid` = unique id for user reference (If this is none an Unique ID will be generated automatically)
+4. `model_type` = classification/ regression
+5. `model version` = (by default Version1 is passed)
+6. `model` = actual model data (as of now H2o model)
+7. `features` = list of features (X)
+8. `target` = target variable
+9. `hyperparams_tuning` = if the model is tuned based on grid search. Then list of tuned parameters needs to be passed
+10. `maximising metrics` = for train/valid metrics - it generated the metrics details for different sets of threshold, So based on this maximising metrics the threshold and corresponding metrics are stores.
+11. `plots_show` = To display all the metrics graphs for the passed model.  For both train and validation data.
 
 
 The use case I have solved in this module is to get the model meta data. 
 
-The modules handled in this pacakges are:
+**The modules handled in this pacakges are:**
 1. Does the model training and the predicition, based on the inputs passed. ( The inputs passed can be either a pandas or H2o framework
    correspondingly the respective flags should be set.
 2. It also handles the hyper parameter tuning to get the best parameters.
@@ -31,7 +31,7 @@ The modules handled in this pacakges are:
 5. And then creates a overall information about the model - which is the model meta data in the json format
 
 ---
-## Sample Execution Output::
+## Sample Execution Output:
 
 ```python
 getting the actual and predicted values...
@@ -48,7 +48,7 @@ Seed value is not passed in the Model - seed = 0 is passed as default
 No cross-validation metrics summary for this model
 CV is not performed in the Model - NULL is passed
   .........
-
+```
 Sample meta data:
 {`Model_UUID`: `17b68386-d49a-11e9-8bff-3c2c30d1ea45`,
  `Model_Tag`: `None`,
@@ -86,7 +86,6 @@ Sample meta data:
  `Modified_Date`: datetime.datetime(2019, 9, 11, 13, 43, 10, 188889),
  `Modified_By`: None}
  
-```
 ---
 ## Contributing
 
